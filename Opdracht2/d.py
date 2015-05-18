@@ -9,12 +9,10 @@ stop = len(string)
 result = []
 
 while(i < stop):
-	x = ord(string[i]) - 97
-	offset = -(ord(codeword[read]) - 97) 
-	result.append(chr((x + offset) % 26 + 97))
+	x = (ord(string[i]) - ord(codeword[i % mod])) % 26 + ord('a')
 	i = i + 1
-	read = read + 1
-	read = read % (mod - 1)
+	result.append(chr(x))
+
 	
 str = ""
 print(str.join(result))

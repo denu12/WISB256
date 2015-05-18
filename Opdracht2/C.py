@@ -8,7 +8,6 @@ afstand = float(input())
 
 v = vuurkracht * vuurkracht
 toparse = zw * afstand / v
-#(zw * afstands) / (vuurkracht * vuurkracht))
 x = math.asin(toparse) / 2
 
 print("{0:.2f}".format(x))
