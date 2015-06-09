@@ -4,7 +4,7 @@ import random
 
 
 N   = int(sys.argv[1])
-L   = int(sys.argv[2])
+L   = float(sys.argv[2])
 if(L < 0):
 	sys.exit("Error L should be between 0 and 1")
 t   = 0
